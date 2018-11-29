@@ -1,0 +1,14 @@
+<h1>Hello Flask!</h1>
+<h3>My Flask Template</h3>
+<p>Phrase: {{ phrase }}</p>
+<p>Times: {{ times }}</p>
+
+{% for x in range(0,times): %}
+    <div style="background-color:{{ phrase }}; height:100px;width:100px;display:inline-block"></div>
+{% endfor %}
+
+
+
+{% if phrase == "hello" %}
+    <p>The phrase says hello</p>
+{% endif %}
